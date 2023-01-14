@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.arrange{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;    
+}
+
+.grid {    
+    display: grid;
+    grid-template-columns: repeat(3,0fr);
+    grid-template-rows: repeat(3,0fr);
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;    
+}
+
+.square{
+    display: flex;
+    background-color: rgb(255, 230, 190);
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    height: 15vmin;
+    width: 15vmin;
+    border: 2px solid black;    
+}
+
+.announcer{
+    text-align: center;
+    margin-top: 10vmin;
+    font-size: 7vmin;
+}
+
+.playagain{
+    text-align: center;
+    font-size: 1em;
+    height: 2em;
+}
+
+.blinking {
+    animation: blink 1s linear infinite;
+  }
+
+  @keyframes blink {
+    50% {
+      background-color: rgb(255, 80, 80);
+    }
+  }
+
+.displayhistory{
+    display: block;
+    position: absolute;
+    left: 50px;
+    width: 300px;
+    color: black;
+    background-color: rgb(190, 190, 190);
+    list-style-type: none;
+    font-size: 0.8em;
+}
+
+.strike-line {
+    
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    top: 50%;
+    left: 0;
+    transform: rotate(45deg);
+}

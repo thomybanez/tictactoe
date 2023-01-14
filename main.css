@@ -1,0 +1,16 @@
+/* Style the tic-tac-toe grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 0.5fr);
+    grid-template-rows: repeat(3, 0.5fr);
+    grid-gap: 10px;
+}
+
+.square {
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    height: calc(10vmin);
+}
